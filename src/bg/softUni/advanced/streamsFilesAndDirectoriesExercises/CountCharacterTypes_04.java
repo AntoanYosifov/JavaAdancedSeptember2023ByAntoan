@@ -38,9 +38,10 @@ public class CountCharacterTypes_04 {
                 line = reader.readLine();
 
             }
-            writer.write(String.format("Vowels: %d\n" +
-                    "Other symbols: %d\n" +
-                    "Punctuation: %d", vowelsCount, othersCount, punctuationsCount
+            writer.write(String.format("""
+                    Vowels: %d
+                    Other symbols: %d
+                    Punctuation: %d""", vowelsCount, othersCount, punctuationsCount
             ));
 
         } catch (IOException e) {
