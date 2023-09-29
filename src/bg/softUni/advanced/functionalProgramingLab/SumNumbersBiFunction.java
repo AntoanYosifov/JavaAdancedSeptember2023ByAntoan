@@ -11,7 +11,9 @@ public class SumNumbersBiFunction {
         Scanner scanner = new Scanner(System.in);
 
 
-        List<String> numbersAsString = Arrays.stream(scanner.nextLine().split(", ")).collect(Collectors.toList());
+        List<String> numbersAsString = Arrays.stream(scanner.nextLine().split(", "))
+                .collect(Collectors.toList());
+
         int sum = 0;
         BiFunction<Integer, String, Integer> parseAndAdd =
                 (acc, curr)-> acc + Integer.parseInt(curr);
