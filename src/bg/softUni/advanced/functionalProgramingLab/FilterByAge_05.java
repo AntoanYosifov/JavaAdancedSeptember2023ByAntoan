@@ -1,8 +1,6 @@
 package bg.softUni.advanced.functionalProgramingLab;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -12,6 +10,8 @@ public class FilterByAge_05 {
         Scanner scanner = new Scanner(System.in);
         Map<String, Integer> peopleByAge = new LinkedHashMap<>();
         int n = Integer.parseInt(scanner.nextLine());
+
+
 
         for (int i = 0; i < n; i++) {
             String[] peopleInfo = scanner.nextLine().split(", ");
