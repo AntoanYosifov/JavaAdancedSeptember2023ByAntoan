@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class ReverseAndExclude_05 {
     public static void main(String[] args) {
 
-// Function<Argument, Return> -> apply
+        // Function<Argument, Return> -> apply
         // Consumer<Argument> -> void -> accept
         // Supplier<Return> -> get
         // Predicate<Argument> -> return true / false -> test
@@ -24,8 +24,8 @@ public class ReverseAndExclude_05 {
 
         Collections.reverse(numbers);
 
-        Predicate<Integer> divisionCheck = num-> num % n != 0;
+        Predicate<Integer> divisionCheck = num -> num % n != 0;
 
-        numbers.stream().filter(num-> divisionCheck.test(num)).forEach(num-> System.out.print(num + " "));
+        numbers.stream().filter(num -> divisionCheck.test(num)).forEach(num -> System.out.print(num + " "));
     }
 }
