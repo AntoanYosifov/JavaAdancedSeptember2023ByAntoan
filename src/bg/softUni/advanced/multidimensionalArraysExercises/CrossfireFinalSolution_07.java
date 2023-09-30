@@ -44,7 +44,7 @@ public class CrossfireFinalSolution_07 {
 
                 if (matrix.get(row).size() == 0) {
                     matrix.remove(row);
-                    row++;
+                    row--;
                 }
             }
 

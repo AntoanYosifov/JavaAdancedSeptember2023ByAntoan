@@ -1,8 +1,10 @@
 package bg.softUni.advanced.multidimensionalArraysExercises;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Crossfire_07 {
@@ -64,10 +66,22 @@ public class Crossfire_07 {
             }
 
 
-            initialMatrix = Arrays.stream(postDestructMatrix).map(row -> Arrays.stream(row).filter(value -> value > 0)
-                    .toArray()).toArray(int[][]::new);
+            List<int[]> result = new ArrayList<>();
+            for (int[] ints : postDestructMatrix) {
+                int[] array = Arrays.stream(ints).filter(value -> value > 0)
+                        .toArray();
+                result.add(array);
+            }
+            initialMatrix = result.toArray(new int[0][]);
 
-            initialMatrix = Arrays.stream(initialMatrix).filter(row -> row.length > 0).toArray(int[][]::new);
+            List<int[]> list = new ArrayList<>();
+            for (int[] row : initialMatrix) {
+                if (row.length > 0) {
+                    list.add(row);
+                }
+            }
+
+            initialMatrix = list.toArray(new int[0][]);
 
 
             input = scanner.nextLine();
@@ -77,7 +91,6 @@ public class Crossfire_07 {
 
 
     }
-
 
 
     private static void printMatrix(int[][] matrix) {
