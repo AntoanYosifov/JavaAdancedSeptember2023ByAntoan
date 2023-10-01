@@ -1,4 +1,4 @@
-package bg.softUni.advanced.definingClassesLab._01;
+package bg.softUni.advanced.definingClassesLab._02_;
 
 import java.util.ArrayList;
 import java.util.List;
