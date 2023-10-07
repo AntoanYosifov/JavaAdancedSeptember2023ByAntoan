@@ -23,7 +23,8 @@ public class Car {
         this.horsePower = horsePower;
 
     }
-    public Car(String brand){
+
+    public Car(String brand) {
         this(brand, "unknown", -1);
     }
 
