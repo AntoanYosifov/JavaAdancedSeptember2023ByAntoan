@@ -1,4 +1,4 @@
-package bg.softUni.advanced.definingClasses_Exercises.SpeedRacing;
+package bg.softUni.advanced.definingClasses_Exercises.SpeedRacing_03;
 
 public class Car {
 private String model;
