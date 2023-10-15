@@ -1,4 +1,4 @@
-package listUtilities;
+package bg.softUni.advanced.genericsLab.listUtilities;
 
 import java.util.Collections;
 import java.util.List;
