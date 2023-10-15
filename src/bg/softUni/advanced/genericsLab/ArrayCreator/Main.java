@@ -1,4 +1,4 @@
-package ArrayCreator;
+package bg.softUni.advanced.genericsLab.ArrayCreator;
 
 
 public class Main {

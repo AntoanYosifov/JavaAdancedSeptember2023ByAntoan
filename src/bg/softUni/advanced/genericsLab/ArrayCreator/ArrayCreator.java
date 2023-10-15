@@ -1,4 +1,4 @@
-package ArrayCreator;
+package bg.softUni.advanced.genericsLab.ArrayCreator;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
